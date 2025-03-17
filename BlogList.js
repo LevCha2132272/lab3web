@@ -1,18 +1,24 @@
-import React, { useState, useEffect } from 'react';
+
+
 
 function BlogList() {
-  const [data, setData] = useState();
+  const [data, setData] = React.useState([]);
 
-    useEffect(() => {
+  React.useEffect(() => {
         fetch('http://localhost:3000/publications')
             .then(response => response.json())
-            .then(data => setData(data))
-            .then(data => console.log(data));
+            .then(data => setData(data));
     }, []);
 
     return (
-        <div>
-            <p>a;;p</p>
+        <div className="container-fluid">
+            <div className="row">
+                {data.map((item) => (
+                    <BlogCard item = {item}/>
+                ))}
+            </div>
         </div>
-    )
+    );
+
 }
+

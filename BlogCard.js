@@ -1,20 +1,17 @@
 
-function BlogCard() {
+function BlogCard({item}) {
     return (
-    <div class="container-fluid">
-        <div class="custom-fluid-containerCards">
-             <div id = "cardsRow" class="row">
-                 <div class="col-10 col-lg-4 d-flex flex-column justify-content-center w-25 h-25"> 
-                    <div class="card m-0"> 
-                        <img src="img/bn.png" class="card-img-top" width="100" height="300"></img>
-                    </div>
-                    <div class="card-body"> <h5 class="card-title">allo</h5> 
-                        <p class="card-text">allo</p>
-                        <a href="blog.html" class="btn btn-primary">Voir le Blog</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>);
+
+<div key={item.id} className="col-10 col-lg-4 d-flex flex-column justify-content-center w-25 h-25">
+    <div className="card m-0">
+        <img src="img/bn.png" className="card-img-top" width="100" height="300" alt={item.title}></img>
+    </div>
+    <div className="card-body">
+        <h5 className="card-title">{item.title}</h5>
+        <p className="card-text">{item.author} - {item.publication_date}</p>
+        <a href={`blog.html?id=${item.id}`} className="btn btn-primary">Voir le Blog</a>
+    </div>
+</div>
+);
 }
 

@@ -4,8 +4,8 @@
 function App() {
     return( <>
         <Header/>
-        <BlogCard/>
         <BlogList/>
+        
         <Footer/>
         </>);
 }
