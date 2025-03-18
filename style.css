@@ -52,13 +52,15 @@ footer {
   background-color: #393E46;
 }
 
-.card {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+.card-body p {
+  color: #393E46 !important;
+}
+.card-body h5 {
+  color: #393E46 !important;
 }
 
-.card p {
-  color: #393E46;
+#cardCol {
+  background-color: white !important;
 }
 
 @media (max-width: 991px) {
@@ -124,10 +126,10 @@ footer {
     justify-content: center;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Lora", serif;
+    font-family: "Lora", serif !important;
   }
   p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif !important;
   }
 }
 
