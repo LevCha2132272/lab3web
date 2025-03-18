@@ -2,7 +2,7 @@
 
 function Footer() {
     return (
-    <footer>
+    <footer class="sticky-bottom">
     <div class = "row d-flex justify-content-center">
 
         <div id = "img_footer" class = "col-2 col-lg-1s">

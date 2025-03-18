@@ -4,9 +4,7 @@
 function App() {
     return( <>
         <Header/>
-        <SearchBar/>
-        <BlogList/>
-        
+        <BlogDetails/>
         <Footer/>
         </>);
 }

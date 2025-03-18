@@ -13,7 +13,6 @@ function BlogList() {
     return (
         <div className="container-fluid">
             <div id = "cardsRow" className="row d-flex justify-content-center">
-
                 {data.map((item) => (
                     <BlogCard item = {item}/>
                 ))}
