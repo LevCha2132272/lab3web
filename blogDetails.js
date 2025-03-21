@@ -18,6 +18,9 @@ function BlogDetails() {
             {data.map((item) => (
                     <BlogPage item = {item}/>
                 ))}
+            {data.map((item) => (
+                    <AddComment item = {item}/>
+                ))}
         </div>
     </div>);
 }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "sass test.sass style.css"
+    "compile_Main": "sass sass.sass style.css"
   },
   "author": "",
   "license": "ISC",

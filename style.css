@@ -7,7 +7,7 @@ label {
 }
 
 p {
-  color: white;
+  color: white !important;
 }
 
 h1 {
@@ -38,6 +38,10 @@ nav a:active {
   background-color: #222831;
 }
 
+.container {
+  background-color: #222831;
+}
+
 .custom-fluid-containerSb {
   padding-top: 2vh;
   padding-bottom: 2vh;
@@ -52,8 +56,14 @@ footer {
   background-color: #393E46;
 }
 
-.card-body p {
+.card-body #cardBlog {
   color: #393E46 !important;
+}
+.card-body #commentP {
+  color: #ffffff !important;
+}
+.card-body #commentT {
+  color: #ffffff !important;
 }
 .card-body h5 {
   color: #393E46 !important;
@@ -130,6 +140,9 @@ footer {
   }
   p {
     font-family: "Open Sans", sans-serif !important;
+  }
+  #commentP {
+    color: #ffffff !important;
   }
 }
 

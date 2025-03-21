@@ -8,7 +8,7 @@ function BlogCard({item}) {
     </div>
     <div className="card-body d-flex flex-column">
         <h5 className="card-title ">{item.title}</h5>
-        <p className="card-text ">{item.author} - {item.publication_date}</p>
+        <p id="cardBlog" className="card-text ">{item.author} - {item.publication_date}</p>
         <a href={`blog.html?id=${item.id}`} className="btn btn-primary  align-self-flex-end">Voir le Blog</a>
     </div>
 </div>
